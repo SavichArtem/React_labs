@@ -1,0 +1,88 @@
+.customersSection{
+    height: 9.15em;
+    width: 90em;
+    padding-top: 3.625em;
+    padding-left: 17.25em;
+    border-top: #D8E3FE solid 0.063em;
+    border-bottom: #D8E3FE solid 0.063em;
+
+}
+
+.customersSection nav ul{
+    width: 55.5em;
+    height: 1.813em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8.60%;
+    list-style: none;
+}
+
+.customersSection nav ul li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(45%) sepia(100%) saturate(355%) hue-rotate(184deg) brightness(94%) contrast(93%);
+}
+
+@media (max-width: 768px){
+
+    .customersSection{
+        height: 9.063em;
+        width: 48em;
+        padding: 0;
+        overflow: hidden;
+
+    }
+    
+    .customersSection nav ul{
+        width: 85.362em;
+        height: 15em;
+        padding-left: 2.534em;
+        padding-top: 2.719em;
+        gap: 3.125em;
+        overflow: hidden;
+    }
+
+    .customersSection img{
+        width: 14.563em;
+    }
+
+    .secondCustomer{
+        padding-top: 0.3em;
+    }
+
+    .thirdCustomer{
+        padding-top: 0.5em;
+    }
+
+    @media (max-width: 320px){
+        .customersSection{
+            height: 3.871em;
+            width: 20em;
+            padding: 0;
+            overflow: hidden;
+    
+        }
+        
+        .customersSection nav ul{
+            width: 36.207em;
+            height: 4em;
+            padding-left: 0.689em;
+            padding-top: 1.153em;
+            gap: 1.326em;
+            overflow: hidden;
+        }
+    
+        .customersSection img{
+            width: 6.181em;
+            height: 1.538em;
+        }
+    
+        .secondCustomer{
+            padding-top: 0em;
+        }
+    
+        .thirdCustomer{
+            padding-top: 0em;
+        }
+    }
+}
