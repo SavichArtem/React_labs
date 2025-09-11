@@ -2,6 +2,7 @@ import './App.css';
 import Header from "./components/header";
 import HeroSection from "./components/heroSection";
 import CustomersSection from './components/customersSection';
+import PlanSection from './components/planSection';
 
 function App() {
   const socialLinks = [
@@ -24,6 +25,7 @@ function App() {
       <Header socialLinks={socialLinks} navItems={navItems}/>
       <HeroSection />
       <CustomersSection />
+      <PlanSection />
     </div>
   );
 }
