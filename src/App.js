@@ -4,6 +4,7 @@ import HeroSection from "./components/heroSection";
 import CustomersSection from './components/customersSection';
 import PlanSection from './components/planSection';
 import Features from './components/features';
+import StatsSection from './components/statsSection';
 
 function App() {
   const socialLinks = [
@@ -28,6 +29,7 @@ function App() {
       <CustomersSection />
       <PlanSection />
       <Features />
+      <StatsSection />
     </div>
   );
 }

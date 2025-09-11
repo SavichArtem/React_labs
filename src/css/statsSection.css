@@ -1,0 +1,212 @@
+.stats{
+    width: 90em;
+    height: 21.38em;
+    border-top: #D8E3FE solid 0.063em;
+    background: linear-gradient(90deg, rgba(233,239,255,1) 0%, rgba(224,233,255,1) 100%);
+    display: flex;
+    position: relative;
+}
+
+.firstStatBlock{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    text-align: right;
+    background: linear-gradient(90deg, rgba(104,136,255,1) 0%, rgba(94,128,255,1) 100%);
+}
+
+.secondStatBlock{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    margin-left: 50%;
+}
+
+.firstStatTextSection{
+    width: 36%;
+    height: 65%;
+    position:absolute;
+    margin-left: 51.5%;
+    margin-top: 9%;
+}
+
+.firstStatTextSection h4{
+    font-family: "Quicksand", serif;
+    line-height: 173.7%;
+    font-size: 3em;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-top: 3%;
+}
+
+.firstStatTextSection p{
+    font-family: "Quicksand", serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 1%;
+    margin-right: 0.5%;
+}
+
+.secondStatTextSection{
+    width: 36%;
+    height: 65%;
+    position: absolute;
+    margin-left: 12.4%;
+    margin-top: 9.4%;
+}
+
+.secondStatTextSection img{
+    margin-left: 0.125em;
+    margin-bottom: 0.125em;
+}
+
+.secondStatTextSection h4{
+    font-family: "Quicksand", serif;
+    line-height: 173.7%;
+    letter-spacing: 0.03em;
+    font-size: 3em;
+    font-weight: normal;
+    color: #5E80FF;
+    margin-top: 1.5%;
+}
+
+.secondStatTextSection p{
+    font-family: "Quicksand", serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #5E80FF;
+    margin-top: 1%;
+}
+
+@media (max-width: 768px){
+
+.stats{
+        width: 48em;
+        height: 13.897em;
+    }
+    
+    .firstStatTextSection{
+        width: 12.612em;
+        height: 11.606em;
+        position:absolute;
+        margin-left: 28.8%;
+        margin-top: 4.6%;
+    }
+    
+
+    .firstStatTextSection img{
+        height: 3.648em;
+        width: 3.153em;
+    }
+
+    .firstStatTextSection h4{
+        font-size: 2.187em;
+        margin-top: 4%;
+    }
+    
+    .firstStatTextSection p{
+        font-size: 0.82em;
+        margin-top: 7%;
+        margin-right: 0;
+    }
+    
+    .secondStatTextSection{
+        width: 12.612em;
+        height: 11.385em;
+        position: absolute;
+        margin-left: 12.4%;
+        margin-top: 5.5%;
+    }
+    
+    .secondStatTextSection img{
+        width: 3.6em;
+        height: 3.6em;
+        margin-left: 1.5em;
+        margin-bottom: 0.125em;
+    }
+    
+    .secondStatTextSection h4{
+        font-size: 2.187em;
+        margin-top: 1.55%;
+        margin-left: 0.65em;
+    }
+    
+    .secondStatTextSection p{
+        font-size: 0.82em;
+        font-weight: 500;
+        margin-top: 7.2%;
+        margin-left: 1.7em;
+    }
+
+    @media (max-width: 320px){
+        
+.stats{
+            width: 20em;
+            height: 8.391em;
+        }
+
+        .firstStatBlock{
+            width: 50.5%;
+        }
+        
+        .firstStatTextSection{
+            width: 10.1em;
+            height: 8.366em;
+            position:absolute;
+            margin-left: -26.5%;
+            margin-top: 8%;
+        }
+        
+    
+        .firstStatTextSection img{
+            height: 2.141em;
+            width: 1.851em;
+        }
+    
+        .firstStatTextSection h4{
+            font-size: 1.284em;
+            margin-top: 3.5%;
+        }
+        
+        .firstStatTextSection p{
+            font-size: 0.481em;
+            margin-top: 4.5%;
+            margin-right: 0;
+        }
+        
+        .secondStatTextSection{
+            width: 12.612em;
+            height: 11.385em;
+            position: absolute;
+            margin-left: 12%;
+            margin-top: 10%;
+        }
+        
+        .secondStatTextSection img{
+            width: 2.021em;
+            height: 2.011em;
+            margin-left: 1.5em;
+            margin-bottom: 0.125em;
+        }
+        
+        .secondStatTextSection h4{
+            font-size: 1.284em;
+            margin-top: 1%;
+            margin-left: 1.1em;
+        }
+        
+        .secondStatTextSection p{
+            font-size: 0.481em;
+            margin-top: 3.5%;
+            margin-left: 3em;
+        }
+
+    }
+}
