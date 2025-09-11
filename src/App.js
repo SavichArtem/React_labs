@@ -6,6 +6,7 @@ import PlanSection from './components/planSection';
 import Features from './components/features';
 import StatsSection from './components/statsSection';
 import BlogSection from './components/blogSection';
+import QuotesSection from './components/quotesSection';
 
 function App() {
   const socialLinks = [
@@ -32,6 +33,7 @@ function App() {
       <Features />
       <StatsSection />
       <BlogSection />
+      <QuotesSection />
     </div>
   );
 }
