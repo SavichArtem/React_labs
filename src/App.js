@@ -9,6 +9,7 @@ import BlogSection from './components/blogSection';
 import QuotesSection from './components/quotesSection';
 import FaqSection from './components/faqSection';
 import GetStartedSection from './components/getStartedSection';
+import NewsletterSection from './components/newsletterSection';
 
 function App() {
   const socialLinks = [
@@ -38,6 +39,7 @@ function App() {
       <QuotesSection />
       <FaqSection />
       <GetStartedSection />
+      <NewsletterSection />
     </div>
   );
 }
