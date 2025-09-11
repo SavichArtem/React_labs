@@ -1,0 +1,263 @@
+footer{
+    font-family: "Quicksand", serif;
+    position: relative;
+    width: 90em;
+    height: 17.938em;
+}
+
+.footer_content{
+    width: 75.375em;
+    height: 6.313em;
+    margin-left: 7.313em;
+    margin-top: 5.813em;
+    display: flex;
+    position: absolute;
+}
+
+.footer_logo{
+    margin-top: 0.5em;
+    width: 1.625em;
+    height: 1.625em;
+}
+
+.footer_navigation{
+    margin-left: 4.55em;
+    margin-top: 0.9em;
+    width: 26.8em;
+    height: 1em;
+}
+
+.footer_navigation ul{
+    font-size: 75%;
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+    color: #697CA6;
+    letter-spacing: 0.07em;
+    justify-content: space-between;
+
+}
+
+.footer_navigation ul li a:hover{
+    color: #5E81FE;
+    font-weight: Bold;
+}
+
+.footer_navigation a {
+    text-decoration: none;
+    color: #697CA6
+}
+
+footer h3{
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    color: #AEB8D0;
+    position: absolute;
+    margin-top: 5.9em;
+    margin-left: 8.3em;
+}
+
+.footer_socials{
+    margin-left: 22.5em;
+    margin-top: 0.8em;
+    width: 10.1em;
+    height: 1em;
+}
+
+.footer_socials ul{
+    display: grid;
+    grid-template-columns: 1em 1.2em 1.2em 1.2em;
+    gap: 1.88em;
+    list-style: none;
+    width: 100%;
+}
+
+
+.footer_socials ul li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(55%) sepia(55%) saturate(4177%) hue-rotate(207deg) brightness(101%) contrast(103%);
+}
+
+.footer_btn{
+    font-family: "Quicksand", serif;
+    transition: all 500ms ease;
+    font-size: 0.8em;
+    margin-left: 3.65%;
+    width: 9.4%;
+    height: 3.3em;
+    color: #3A79FF;
+    background-color: #D2E1FF;
+    border-radius: 0.125em;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+.footer_btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.menuMobile_footer{
+    display: none;
+    width: 2.38em;
+    height: 2.3em;
+    margin-left: 3.6em;
+    margin-top: 1.65em;
+    background-image: url('../assets/menuMobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 768px){
+
+    footer{
+        width: 48em;
+        height: 10.125em;
+    }
+
+    .footer_content{
+        width: 48em;
+        height: 4.375em;
+        margin-left: 0;
+        margin-top: 1.383em;
+    }
+
+    .footer_logo{
+        margin-top: 1.5em;
+        margin-left: 2.2em;
+        width: 2em;
+        height: 2em;
+    }
+    
+    .footer_navigation{
+        display: none;
+    }
+
+    footer h3{
+        font-family: "Quicksand", serif;
+        font-weight: 500;
+        font-size: 0.75em;
+        letter-spacing: 0.05em;
+        color: #AEB8D0;
+        position: absolute;
+        margin-top: 8.55em;
+        margin-left: 23.3em;
+    }
+    
+    .footer_socials{
+        margin-left: 10.5em;
+        margin-top: 1.55em;
+        width: 15.5em;
+        height: 1.584em;
+    }
+    
+    .footer_socials ul{
+        display: grid;
+        grid-template-columns: 1em 1.8em 1.6em 1.5em;
+        gap: 3em;
+        list-style: none;
+        width: 15.188em;
+    }
+
+    .footer_socials img{
+        margin-top: 0.2em;
+        height: 1.4em;
+    }
+
+    .footer_btn{
+        font-size: 0.887em;
+        margin-left: 3em;
+        margin-top: 1em;
+        width: 9em;
+        height: 3.4em;
+    }
+
+    .menuMobile_footer{
+        display: flex;
+    }
+
+    @media (max-width: 320px){
+
+        footer{
+            width: 20em;
+            height: 5.063em;
+        }
+    
+        .footer_content{
+            width: 18.177em;
+            height: 1.254em;
+            margin-left: 0.849em;
+            margin-top: 0.767em;
+        }
+    
+        .footer_logo{
+            margin-top: 0.3em;
+            width: 0.835em;
+            height: 0.856em;
+            margin-left: 0em;
+        }
+        
+        .footer_navigation{
+            display: none;
+        }
+    
+        footer h3{
+            font-family: "Quicksand", serif;
+            font-weight: 500;
+            width: 18em;
+            font-size: 0.513em;
+            letter-spacing: 0.05em;
+            color: #AEB8D0;
+            position: absolute;
+            margin-top: 5.5em;
+            margin-left: 9.2em;
+        }
+        
+        .footer_socials{
+            margin-left: 4.347em;
+            margin-top: 0em;
+            width: 6.328em;
+            height: 0.678em;
+        }
+        
+        .footer_socials ul{
+            display: grid;
+            grid-template-columns: 0.37em 0.59em 0.6em 0.645em;
+            gap: 1.35em;
+            list-style: none;
+            width: 100%;
+        }
+    
+        .footer_socials img{
+            margin-top: 0.2em;
+            height: 0.6em;
+        }
+    
+        .footer_btn{
+            font-size: 0.369em;
+            margin-top: 0.2em;
+            margin-left: 3.5em;
+            width: 9.2em;
+            height: 3.3em;
+        }
+    
+        .menuMobile_footer{
+            display: flex;
+            width: 1em;
+            height: 1em;
+            margin-left: 1.37em;
+            margin-top: 0.28em;
+            background-image: url('../assets/menuMobile.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: none;
+        }
+
+    }
+}

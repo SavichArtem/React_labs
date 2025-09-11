@@ -10,6 +10,7 @@ import QuotesSection from './components/quotesSection';
 import FaqSection from './components/faqSection';
 import GetStartedSection from './components/getStartedSection';
 import NewsletterSection from './components/newsletterSection';
+import Footer from './components/footer';
 
 function App() {
   const socialLinks = [
@@ -40,6 +41,7 @@ function App() {
       <FaqSection />
       <GetStartedSection />
       <NewsletterSection />
+      <Footer socialLinks={socialLinks} navItems={navItems} />
     </div>
   );
 }
