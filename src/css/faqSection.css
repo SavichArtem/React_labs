@@ -1,0 +1,358 @@
+.faq_section{
+    width: 90em;
+    height: 60.35em;
+    position: relative;
+    text-align: left;
+}
+
+.faq_content{
+    width: 46.438em;
+    height: 38.375em;
+    margin-top: 11em;
+    margin-left: 21.75em;
+    position: absolute;
+}
+
+.faq_title{
+    width: 19.438em;
+    height: 3.875em;
+    margin-left: 13.55em;
+}
+
+.faq_title h3{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 0.625em;
+    letter-spacing: 0.10em;
+    color: #3D4F9F;
+    margin-left: 10.6em;
+}
+
+.faq_title h2{
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #3D4F9F;
+    margin-top: 0.85em;
+}
+
+.questions{
+    display: grid;
+    margin-top: 4.25em;
+    grid-row: 46.438em 46.438em 46.438em 46.438em 46.438em;
+    gap: 1.063em;
+}
+
+.questions img{
+    position: absolute;
+    margin-left: 1.38em;
+    margin-top: 1.15em;
+}
+
+.questions img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.firstQuestion{
+    display: flex;
+    height: 3.75em;
+    border-bottom: #D8E3FE solid 0.063em;
+}
+
+.firstQuestion h4{
+    font-family: "Quicksand", serif;
+    width: 11em;
+    height: 1.5em;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-left: 4.15em;
+    margin-top: 0.9em;
+    color: #8E96B7;
+}
+
+.secondQuestion{
+    display: flex;
+    height: 3.75em;
+    border-bottom: #D8E3FE solid 0.063em;
+}
+
+.secondQuestion h4{
+    font-family: "Quicksand", serif;
+    width: 27.5em;
+    height: 1.5em;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 130%;
+    letter-spacing: 0.033em;
+    margin-left: 4.1em;
+    margin-top: 0.9em;
+    color: #8E96B7;
+}
+
+.thirdQuestion{
+    display: flex;
+    height: 11em;
+    border-bottom: #D8E3FE solid 0.063em;
+}
+
+.thirdQuestion h4{
+    font-family: "Quicksand", serif;
+    font-weight: bold;
+    font-size: 0.938em;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #495274;
+    margin-left: 4.1em;
+    margin-top: 0.9em;
+    height: 1.5em;
+    width: 20em;
+}
+
+.thirdQuestion button{
+    position: absolute;
+    font-family: "Quicksand", serif;
+    transition: all 500ms ease;
+    font-size: 0.813em;
+    font-weight: 500;
+    background-color: #E8ECF4;
+    color: #7382A3;
+    width: 15em;
+    height: 3.3em;
+    border: none;
+    border-radius: 0.125em;
+    margin-top: 5.11em;
+    margin-left: 41em;
+}
+
+.thirdQuestion button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #3A79FF;
+}
+
+.thirdQuestion p{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    line-height: 191%;
+    letter-spacing: 0.03em;
+    font-size: 0.875em;
+    color: #8D96BD;
+    margin-top: 4.1em;
+    margin-left: -20.2em;
+    width: 28em;
+}
+
+.fourthQuestion{
+    display: flex;
+    height: 3.75em;
+    border-bottom: #D8E3FE solid 0.063em;
+}
+
+.fourthQuestion h4{
+    font-family: "Quicksand", serif;
+    width: 27.5em;
+    height: 1.5em;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 130%;
+    letter-spacing: 0.033em;
+    margin-left: 4.13em;
+    margin-top: 0.85em;
+    color: #8E96B7;
+}
+
+.fifthQuestion{
+    display: flex;
+    height: 3.75em;
+    border-bottom: #D8E3FE solid 0.063em;
+}
+
+.fifthQuestion h4{
+    font-family: "Quicksand", serif;
+    width: 32em;
+    height: 1.5em;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 130%;
+    letter-spacing: 0.033em;
+    margin-left: 4.1em;
+    margin-top: 0.85em;
+    color: #8E96B7;
+}
+
+@media (max-width: 768px){
+
+    .faq_section{
+        width: 48em;
+        height: 43.625em;
+        position: relative;
+    }
+    
+    .faq_content{
+        width: 39.25em;
+        height: 32.438em;
+        margin-top: 1.75em;
+        margin-left: 4.375em;
+    }
+    
+    .faq_title{
+        width: 16.343em;
+        height: 3.313em;
+        margin-left: 11.411em;
+    }
+    
+    .faq_title h3{
+        font-size: 0.529em;
+        margin-left: 10.6em;
+        margin-top: 0.1em;
+    }
+    
+    .faq_title h2{
+        font-size: 1.271em;
+        margin-top: 0.85em;
+    }
+
+    .questions{
+        margin-top: 3.5em;
+        grid-row: 39.25em 39.25em 39.25em 39.25em 39.25em;
+        gap: 0.898em;
+    }
+    
+    .questions img{
+        position: absolute;
+        height: 0.55em;
+        width: 0.9em;
+        margin-left: 1.2em;
+        margin-top: 1em;
+    }
+
+    .firstQuestion{
+        height: 3.17em;
+    }
+
+    .secondQuestion{
+        height: 3.17em;
+    }
+
+    .thirdQuestion{
+        height: 9.298em;
+    }
+
+    .fourthQuestion{
+        height: 3.17em;
+    }
+
+    .fifthQuestion{
+        height: 3.17em;
+    }
+
+    .questions h4{
+        font-size: 0.794em;
+    }
+
+    .questions p{
+        font-size: 0.741em;
+    }
+
+    .thirdQuestion button{
+        font-size: 0.688em;
+        width: 15em;
+        height: 3.2em;
+        margin-top: 5.11em;
+        margin-left: 41em;
+    }
+
+    @media (max-width: 320px){
+        
+        .faq_section{
+            width: 20em;
+            height: 30.875em;
+            position: relative;
+        }
+        
+        .faq_content{
+            width: 16.343em;
+            height: 21.563em;
+            margin-top: 1.75em;
+            margin-left: 0em;
+        }
+        
+        .faq_title{
+            width: 16.343em;
+            height: 3.313em;
+            margin-left: 1.75em;
+        }
+        
+        .faq_title h3{
+            font-size: 0.529em;
+            margin-left: 10.6em;
+            margin-top: 0.1em;
+        }
+        
+        .faq_title h2{
+            font-size: 1.271em;
+            margin-top: 0.85em;
+        }
+    
+        .questions{
+            margin-top: 2.5em;
+            grid-row: 1.954em 1.954em 5.732em 1.954em 1.954em;
+            gap: 0.554em;
+            width: 20em;
+        }
+        
+        .questions img{
+            position: absolute;
+            height: 0.3em;
+            width: 0.65em;
+            margin-left: 0.78em;
+            margin-top: 0.55em;
+        }
+    
+        .firstQuestion{
+            height: 1.954em;
+            
+        }
+    
+        .secondQuestion{
+            height: 1.954em;
+        }
+    
+        .thirdQuestion{
+            height: 5.732em;
+        }
+    
+        .fourthQuestion{
+            height: 1.954em;
+        }
+    
+        .fifthQuestion{
+            height: 1.954em;
+        }
+    
+        .questions h4{
+            font-size: 0.489em;
+            margin-left: 4.45em;
+        }
+    
+        .questions p{
+            font-size: 0.457em;
+            width: 21em;
+            margin-left: -21.5em;
+            margin-top: 3.6em;
+            height: 8em;
+        }
+    
+        .thirdQuestion button{
+            font-size: 0.424em;
+            width: 16em;
+            height: 3.4em;
+            margin-top: 5.11em;
+            margin-left: 29em;
+        }
+
+    }
+}

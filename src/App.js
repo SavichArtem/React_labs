@@ -7,6 +7,7 @@ import Features from './components/features';
 import StatsSection from './components/statsSection';
 import BlogSection from './components/blogSection';
 import QuotesSection from './components/quotesSection';
+import FaqSection from './components/faqSection';
 
 function App() {
   const socialLinks = [
@@ -34,6 +35,7 @@ function App() {
       <StatsSection />
       <BlogSection />
       <QuotesSection />
+      <FaqSection />
     </div>
   );
 }
