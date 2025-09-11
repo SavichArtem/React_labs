@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.heroImage{
+    background: linear-gradient(90deg, rgba(244,247,255,1) 0%, rgba(241,245,255,1) 100%);    
+    height: 35.6em;
+    width: 90em;
+    border-top: #D8E3FE solid 0.063em;
+}
+
+.text_illustation{
+    background-image: url('../assets/heroImage.svg');
+    height: 35.75em;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.heroImage h2{
+    font-family: "Roboto", serif;
+    width: 7%;
+    height: 2%;
+    top: 15.55%;
+    left: 46.35%;
+    font-weight: 500;
+    letter-spacing: 0.10em;
+    font-size: 0.625em;
+    line-height: auto;
+    color: #3D4F9F;
+    position: absolute;
+}
+
+h1{
+    font-family: "Quicksand", serif;
+    font-weight: 300;
+    font-size: 3em;
+    color: #3D4F9F;
+    position: absolute;
+    top: 20.60%;
+    left: 29.8%;
+}
+
+.heroImage p{
+    font-family: "Roboto", serif;
+    left: 33.45%;
+    top: 35.15%;
+    font-weight: normal;
+    color: #8D96BD;
+    font-size: 0.938em;
+    letter-spacing: 0.03em;
+    line-height: 191%;
+    position: absolute;
+    width: 33.10%;
+    height: 14.5%;
+}
+
+span{
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+}
+
+.text_illustation .playBtn{
+    position: absolute;
+    width: 3.95em;
+    height: 3.95em;
+    background-image: url('../assets/PolygonPlayBtn.png');
+    border-radius: 3em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: white;
+    top: 53.2%;
+    left: 48.2%;
+}
+
+.text_illustation .playBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.text_illustation .slider_nav a{
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #D1D6E3;
+}
+
+.text_illustation .slider_nav{
+    width: 3.33%;
+    column-gap: 0.75em;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    top: 93.1%;
+    left: 48.33%;
+}
+
+.text_illustation .slider_nav .firstDot{
+    background-color: #5283FF;
+}
+
+.text_illustation .slider_nav a:hover{
+    cursor: pointer;
+    filter: invert(62%) sepia(85%) saturate(5152%) hue-rotate(209deg) brightness(105%) contrast(101%);
+}
+
+    @media (max-width: 768px) {
+        .heroImage{
+        height: 30.5em;
+        width: 48em;
+        overflow: hidden;
+    }
+
+    .text_illustation{
+        width: 49.2em;
+        height: 30.5em;
+        background-repeat: no-repeat;
+        background-size: 76.875em;
+    }
+
+    .heroImage h2{
+        font-family: "Roboto", serif;
+        width: 9em;
+        height: 0.938em;
+        top: 8.8%;
+        left: 43.2%;
+        font-size: 0.696em;
+    }
+    
+    h1{
+        font-size: 3.339em;
+        top: 15%;
+        left: 9%;
+    }
+    
+    .heroImage p{
+        left: 15.8%;
+        top: 34%;
+        font-size: 1.043em;
+        width: 32.311em;
+        height: 5.021em;
+    }
+
+    .text_illustation .playBtn{
+        left: 46.5%;
+        width: 4.2em;
+        height: 4.2em;
+        top: 58%;
+    }
+    
+    .text_illustation .slider_nav{
+        width: 11%;
+        height: 4%;
+        top: 92%;
+        left: 44.5%;
+    }
+
+    .text_illustation .slider_nav a{
+        margin: 0.25em;
+        width: 0.86em;
+        height: 0.86em;
+        border-radius: 50%;
+        background-color: #D1D6E3;
+    }
+
+    @media (max-width: 320px){
+             .heroImage{
+            height: 13.375em;
+            width: 20em;
+            overflow: hidden;
+        }
+    
+        .text_illustation{
+            width: 33.813em;
+            height: 12.507em;
+            background-repeat: no-repeat;
+            background-position: -6.8em 0em;
+            background-size: 33.5em;
+        }
+    
+        .heroImage h2{
+            width: 15em;
+            height: 1em;
+            top: 1.223;
+            left: 15.3em;
+            font-size: 0.438em;
+        }
+        
+        h1{
+            font-size: 1.464em;
+            top: 16%;
+            left: 3.2%;
+        }
+        
+        .heroImage p{
+            left: 7%;
+            top: 35.8%;
+            font-size: 0.563em;
+            width: 27em;
+            height: 6em;
+        }
+    
+        .text_illustation .playBtn{
+            left: 27%;
+            width: 2.0em;
+            height: 2em;
+            background-size: 5px;
+            top: 65%;
+        }
+        
+        .text_illustation .slider_nav{
+            width: 3em;
+            height: 0.5em;
+            top: 99%;
+            left: 26%;
+            column-gap: 0.66em;
+        }
+    
+        .text_illustation .slider_nav a{
+            margin: 0em;
+            width: 0.35em;
+            height: 0.4em;
+            border-radius: 50%;
+            background-color: #D1D6E3;
+        }
+    }
+}
