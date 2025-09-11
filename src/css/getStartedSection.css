@@ -1,0 +1,253 @@
+.get_started_section{
+    background: linear-gradient(220deg, rgba(104,136,255,1) 0%, rgba(94,128,255,1) 100%);
+    position: relative;
+    width: 90em;
+    height: 27.94em;
+    text-align: left;
+}
+
+.gs_clouds{
+    position: absolute;
+    width: 81.063em;
+    height: 20.5em;
+    margin-left: 3.375em;
+    margin-top: 4.5em;
+    background-image: url('../assets/clouds.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gs_text{
+    position: absolute;
+    width: 44.5em;
+    height: 12.125em;
+    margin-left: 22.75em;
+    margin-top: 5.688em;
+}
+
+.gs_text h3{
+    font-family: "Roboto", serif;
+    width: 9em;
+    height: 1em;
+    font-weight: 500;
+    font-size: 0.625em;
+    letter-spacing: 0.10em;
+    margin-left: 30.9em;
+    color: #FFFFFF;
+}
+
+.gs_text h2{
+    font-family: "Quicksand", serif;
+    width: 7.5em;
+    font-weight: 300;
+    font-size: 3em;
+    margin-top: 0.38em;
+    margin-left: 3.7em;
+    color: #FFFFFF;
+}
+
+.gs_text p{
+    font-family: "Roboto", serif;
+    text-align: center;
+    width: 44.5;
+    height: 4.875em;
+    font-size: 0.938em;
+    font-weight: 400;
+    line-height: 191%;
+    letter-spacing: 0.03em;
+    margin-top: 1.5em;
+    margin-right: 0em;
+    color: #FFFFFF;
+
+}
+
+.gs_btn{
+    display: flex;
+    position: absolute;
+    width: 17.75em;
+    height: 2.688em;
+    margin-left: 36.125em;
+    margin-top: 19.563em;
+}
+
+.viewPricingBtn{
+    font-family: "Quicksand", serif;
+    width: 10.1em;
+    height: 3.3em;
+    border:none;
+    border-top-left-radius: 0.125em;
+    border-bottom-left-radius: 0.125em;
+    background-color: #FFFFFF;
+    color: #565F82;
+    font-weight: bold;
+    font-size: 0.813em;
+}
+
+.readDocBtn{
+    font-family: "Quicksand", serif;
+    width: 12em;
+    height: 3.3em;
+    font-weight: 500;
+    font-size: 0.813em;
+    border: #A0B4FF solid 0.094em;
+    border-top-right-radius: 0.125em;
+    border-bottom-right-radius: 0.125em;
+    border-left: none;
+    background-color: transparent;
+    overflow: hidden;
+    color: #C7D3FF;
+}
+
+.viewPricingBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.readDocBtn:hover{
+    cursor: pointer;
+    color: white;
+    border-color: white;
+}
+
+@media (max-width: 768px){
+
+    .get_started_section{
+        width: 48em;
+        height: 14.875em;
+    }
+    
+    .gs_clouds{
+        width: 43.233em;
+        height: 10.616em;
+        margin-left: 1.8em;
+        margin-top: 2.5em;
+        background-size: 735px;
+    }
+    
+    .gs_text{
+        width: 31.617em;
+        height: 8.483em;
+        margin-left: 8.373em;
+        margin-top: 1.469em;
+    }
+
+    .gs_text h3{
+        font-size: 0.438em;
+        margin-left: 31.3em;
+        margin-top: -0.1em;
+    }
+    
+    .gs_text h2{
+        font-size: 2.099em;
+        margin-left: 3.8em;
+    }
+    
+    .gs_text p{
+        font-size: 0.656em;
+        margin-top: 1.6em;
+    }
+
+    .gs_btn{
+        width: 17.718em;
+        height: 2.533em;
+        margin-left: 15.714em;
+        margin-top: 10.428em;
+    }
+    
+    .viewPricingBtn{
+        width: 10.3em;
+        font-size: 0.790em;
+    }
+    
+    .readDocBtn{
+        width: 12.4em;
+        height: 3.3em;
+        font-size: 0.766em;
+    }
+
+    @media (max-width: 320px){
+        
+        .get_started_section{
+            background: linear-gradient(220deg, rgba(104,136,255,1) 0%, rgba(94,128,255,1) 100%);
+            position: relative;
+            width: 20em;
+            height: 13.75em;
+        }
+        
+        .gs_clouds{
+            position: absolute;
+            width: 20em;
+            height: 7.188em;
+            margin-left: 0em;
+            margin-top: 3em;
+            background-image: url('../assets/clouds.png');
+            background-size: 21em;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .gs_text{
+            position: absolute;
+            width: 17.125em;
+            height: 7.438em;
+            margin-left: 1em;
+            margin-top: 1.3em;
+        }
+        
+        .gs_text h3{
+            font-family: "Roboto", serif;
+            width: 9em;
+            height: 1em;
+            font-weight: 500;
+            font-size: 0.563em;
+            letter-spacing: 0.10em;
+            margin-left: 11.5em;
+            color: #FFFFFF;
+        }
+        
+        .gs_text h2{
+            font-family: "Quicksand", serif;
+            width: 7.5em;
+            font-weight: 300;
+            font-size: 1.749em;
+            margin-top: 0.5em;
+            margin-left: 1.4em;
+            color: #FFFFFF;
+        }
+        
+        .gs_text p{
+            width: 32em;
+            height: 5.7em;
+            font-size: 8.5px;
+            line-height: 200%;
+            letter-spacing: 0.04em;
+            margin-top: 1.6em;
+            margin-left: 0.8em;
+        
+        }
+        
+        .gs_btn{
+            display: flex;
+            position: absolute;
+            width: 14.75em;
+            height: 2.188em;
+            margin-left: 3em;
+            margin-top: 10.3em;
+        }
+        
+        .viewPricingBtn{
+            width: 10.5em;
+            height: 3.5em;
+            font-size: 0.638em;
+        }
+        
+        .readDocBtn{
+            width: 12.6em;
+            height: 3.5em;
+            font-weight: 500;
+            font-size: 0.638em;
+            overflow: hidden;
+        }
+
+    }
+}
