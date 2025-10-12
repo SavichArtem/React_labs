@@ -3,6 +3,7 @@ import { HeroSection } from '../../components/HeroSection/HeroSection';
 import { FeaturesSection } from '../../components/FeaturesSection/FeaturesSection';
 import { HowItWorksSection } from '../../components/HowItWorksSection/HowItWorksSection';
 import { GettingStarted } from '../../components/GettingStarted/GettingStarted';
+import { Footer } from '../../components/Footer/Footer';
 
 export function HomePage() {
   return (
@@ -12,6 +13,7 @@ export function HomePage() {
       <FeaturesSection/>
       <HowItWorksSection/>
       <GettingStarted/>
+      <Footer/>
     </div>
   );
 }
