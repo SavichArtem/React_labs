@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Иванов Иван Иванович",
+    "course": "3",
+    "group": "АСОИР-221",
+    "studyType": "budget",
+    "debts": 0,
+    "gpa": 4,
+    "passes": 30,
+    "activity": "medium"
+  },
+  {
+    "id": 2,
+    "name": "Петрова Анна Сергеевна",
+    "course": "2",
+    "group": "АСОИР-231",
+    "studyType": "contract",
+    "debts": 1,
+    "gpa": 4.5,
+    "passes": 15,
+    "activity": "high"
+  },
+  {
+    "id": 3,
+    "name": "Сидоров Дмитрий Петрович",
+    "course": "4",
+    "group": "АСОИР-211",
+    "studyType": "budget",
+    "debts": 2,
+    "gpa": 3.2,
+    "passes": 45,
+    "activity": "low"
+  }
+]
