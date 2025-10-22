@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import { BootstrapModal } from '../Bootstrap/BootstrapModal';
 import { BootstrapNavbar } from '../Bootstrap/BootstrapNavbar';
+import { BootstrapNav } from '../Bootstrap/BootstrapNav';
 import { Link, useLocation } from 'react-router-dom';
 
 export function Header() {
@@ -9,14 +10,24 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <BootstrapNavbar brand="FreelancePlatform">
-      <nav className="nav">
-        <ul className="nav_list">
-          <li><Link to="/">Главная</Link></li>
-          <li><Link to="/freelancers">Фрилансеры</Link></li>
-          <li><Link to="/contact">Контакты</Link></li>
-        </ul>
-      </nav>
+    <BootstrapNavbar brand="Freelance Platform">
+      <BootstrapNav>
+        <li className="nav-item">
+          <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">
+            Главная
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className={`nav-link ${location.pathname === '/freelancers' ? 'active' : ''}`} to="/freelancers">
+            Фрилансеры
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">
+            Контакты
+          </Link>
+        </li>
+      </BootstrapNav>
       <div className="auth_buttons">
         <BootstrapButton 
           variant="outline-secondary" 
