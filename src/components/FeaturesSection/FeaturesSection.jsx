@@ -1,18 +1,21 @@
+import { BootstrapCard } from '../Bootstrap/BootstrapCard';
+import { BootstrapSpinner } from '../Bootstrap/BootstrapSpinner';
+import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import '../FeaturesSection/FeaturesSection.css';
 
 export function FeaturesSection() {
   const features = [
     {
-      title: "Поиск проектов",
-      description: "Доступ к тысячам актуальных проектов от проверенных заказчиков"
+      title: "Находите заказы",
+      description: "Тысячи проектов разных категорий и бюджетов"
     },
     {
-      title: "Безопасные платежи",
-      description: "Гарантированная оплата через защищенную систему расчетов"
+      title: "Работайте безопасно",
+      description: "Все платежи защищены, деньги только за результат"
     },
     {
-      title: "Рейтинговая система",
-      description: "Повышайте свой рейтинг и получайте более выгодные предложения"
+      title: "Получайте отзывы", 
+      description: "Стройте репутацию и привлекайте больше клиентов"
     }
   ];
 
@@ -22,13 +25,18 @@ export function FeaturesSection() {
         <h2 className="features_title">Наши преимущества</h2>
         <div className="features_grid">
           {features.map((feature, index) => (
-            <div className="feature_card" key={index}>
-              <div className="feature_icon">
-                {index + 1}
+            <BootstrapCard key={index} title={feature.title}>
+              <div className="text-center mb-3">
+                <BootstrapSpinner 
+                  variant={index === 0 ? 'primary' : index === 1 ? 'success' : 'info'}
+                  size="sm"
+                />
               </div>
-              <h3 className="feature_title">{feature.title}</h3>
               <p className="feature_description">{feature.description}</p>
-            </div>
+              <BootstrapButton variant="outline-primary" className="mt-3">
+                Узнать больше
+              </BootstrapButton>
+            </BootstrapCard>
           ))}
         </div>
       </div>
