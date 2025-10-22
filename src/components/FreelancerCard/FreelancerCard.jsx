@@ -1,22 +1,15 @@
 import React from 'react';
+import { BootstrapCard } from '../Bootstrap/BootstrapCard';
+import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import './FreelancerCard.css';
 
 const FreelancerCard = ({ freelancer, onEdit, onToggleSelect, isSelected }) => {
-  const getExperienceText = (experience) => {
-    switch (experience) {
-      case 'high': return 'Высокий';
-      case 'medium': return 'Средний';
-      case 'low': return 'Начинающий';
-      default: return experience;
-    }
-  };
-
   const getSpecializationText = (specialization) => {
     const specializations = {
-      'development': 'Разработка',
-      'design': 'Дизайн',
-      'marketing': 'Маркетинг',
-      'writing': 'Копирайтинг'
+      'development': '💻 Разработка',
+      'design': '🎨 Дизайн', 
+      'marketing': '📈 Маркетинг',
+      'writing': '✏️ Копирайтинг'
     };
     return specializations[specialization] || specialization;
   };
@@ -27,24 +20,32 @@ const FreelancerCard = ({ freelancer, onEdit, onToggleSelect, isSelected }) => {
   };
 
   return (
-    <div className={`freelancer_card ${isSelected ? 'selected' : ''}`} onClick={handleCardClick}>
-      <div className="freelancer_header">
-        <h3>{freelancer.name}</h3>
-      </div>
-      
+    <BootstrapCard 
+      title={freelancer.name}
+      subtitle={getSpecializationText(freelancer.specialization)}
+      selected={isSelected}
+      onClick={handleCardClick}
+    >
       <div className="freelancer_info">
-        <p><strong>Специализация:</strong> {getSpecializationText(freelancer.specialization)}</p>
-        <p><strong>Опыт:</strong> {getExperienceText(freelancer.experience)}</p>
+        <p><strong>Опыт:</strong> {freelancer.experience}</p>
         <p><strong>Ставка:</strong> ${freelancer.hourlyRate}/час</p>
-        <p><strong>Выполнено проектов:</strong> {freelancer.completedProjects}</p>
+        <p><strong>Проектов:</strong> {freelancer.completedProjects}</p>
         <p><strong>Рейтинг:</strong> {freelancer.rating}/5</p>
         <p><strong>Навыки:</strong> {freelancer.skills}</p>
       </div>
 
       <div className="freelancer_actions">
-        <button className="edit_btn" onClick={() => onEdit(freelancer)}> Редактировать </button>
+        <BootstrapButton 
+          variant="outline-primary" 
+          onClick={(e) => {
+            e.stopPropagation();
+            onEdit(freelancer);
+          }}
+        >
+          Редактировать
+        </BootstrapButton>
       </div>
-    </div>
+    </BootstrapCard>
   );
 };
 
