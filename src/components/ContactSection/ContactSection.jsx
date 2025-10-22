@@ -1,9 +1,16 @@
+import React from 'react';
+import { BootstrapAlert } from '../Bootstrap/BootstrapAlert';
+import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import '../ContactSection/ContactSection.css';
 
 export function ContactSection() {
   return (
     <section className="contact_section">
       <div className="container">
+        <BootstrapAlert variant="info" dismissible>
+          Свяжитесь с нами для получения дополнительной информации о нашей платформе для фрилансеров
+        </BootstrapAlert>
+        
         <div className="contact_content">
           <div className="contact_text">
             <h1 className="contact_title">Свяжитесь с нами</h1>
@@ -29,9 +36,12 @@ export function ContactSection() {
                 <p>Пн-Вс: 8:00 - 22:00</p>
               </div>
             </div>
+            <BootstrapButton variant="primary">
+              Написать нам
+            </BootstrapButton>
           </div>
           <div className="contact_image">
-            <img src='freelanceContact.jpg' alt="Контакты фриланс" className="contact_img"/>
+            <img src='contact.webp' alt="Контакты" className="contact_img"/>
           </div>
         </div>
       </div>
