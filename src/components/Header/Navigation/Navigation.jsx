@@ -1,14 +1,22 @@
+import { BootstrapNav } from '../../Bootstrap/BootstrapNav';
+import { Link, useLocation } from "react-router-dom";
 import '../Navigation/Navigation.css';
-import { Link } from "react-router-dom";
 
 export function Navigation() {
+    const location = useLocation();
+    
     return (
-        <nav className="nav">
-            <ul className="nav_list">
-                <li><Link to="/">Главная</Link></li>
-                <li><Link to="/freelancer">Фрилансеры</Link></li>
-                <li><Link to="/contact">Контакты</Link></li>
-            </ul>
-        </nav>
+        <BootstrapNav>
+            <li className="nav-item">
+                <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Главная</Link>
+            </li>
+            <li className="nav-item">
+                <Link className={`nav-link ${location.pathname === '/freelancer' ? 'active' : ''}`} to="/freelancers">Фрилансеры</Link>
+            </li>
+            <li className="nav-item">
+                <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">Контакты
+                </Link>
+            </li>
+        </BootstrapNav>
     )
 }

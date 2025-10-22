@@ -2,32 +2,14 @@ import { useState } from 'react';
 import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import { BootstrapModal } from '../Bootstrap/BootstrapModal';
 import { BootstrapNavbar } from '../Bootstrap/BootstrapNavbar';
-import { BootstrapNav } from '../Bootstrap/BootstrapNav';
-import { Link, useLocation } from 'react-router-dom';
+import { Navigation } from './Navigation/Navigation';
 
 export function Header() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const location = useLocation();
 
   return (
     <BootstrapNavbar brand="Freelance Platform">
-      <BootstrapNav>
-        <li className="nav-item">
-          <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">
-            Главная
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className={`nav-link ${location.pathname === '/freelancers' ? 'active' : ''}`} to="/freelancers">
-            Фрилансеры
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">
-            Контакты
-          </Link>
-        </li>
-      </BootstrapNav>
+      <Navigation />
       <div className="auth_buttons">
         <BootstrapButton 
           variant="outline-secondary" 
