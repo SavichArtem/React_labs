@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import { BootstrapCarousel } from '../Bootstrap/BootstrapCarousel';
+import { BootstrapToast } from '../Bootstrap/BootstrapToast';
 import '../HeroSection/HeroSection.css';
 
 export function HeroSection() {
+  const [showToast, setShowToast] = useState(false);
+
   const carouselItems = [
     {
       image: "study.webp",
@@ -30,7 +34,16 @@ export function HeroSection() {
     }
   ];
 
+  const handleGetStarted = () => {
+    setShowToast(true);
+    // Автоматически скрыть через 4 секунды
+    setTimeout(() => {
+      setShowToast(false);
+    }, 4000);
+  };
+
   return (
+    <>
     <div className="hero_section">
       <div className="container">
         <div className="hero_content">
@@ -40,7 +53,7 @@ export function HeroSection() {
               Присоединяйтесь к сообществу профессионалов и находите проекты, 
               которые соответствуют вашим навыкам и амбициям.
             </p>
-            <BootstrapButton variant="primary" size="lg">
+            <BootstrapButton variant="primary" size="lg" onClick={handleGetStarted}>
               Найти проекты
             </BootstrapButton>
           </div>
@@ -50,6 +63,14 @@ export function HeroSection() {
         </div>
       </div>
     </div>
+
+    <BootstrapToast 
+        show={showToast}
+        onClose={() => setShowToast(false)}
+        title="Отличный выбор!"
+        body="Вы сделали первый шаг к успешной карьере фрилансера!"
+      />
+    </>
   );
 };
 
