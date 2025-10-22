@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BootstrapButton } from '../Bootstrap/BootstrapButton';
 import { BootstrapModal } from '../Bootstrap/BootstrapModal';
 import { BootstrapNavbar } from '../Bootstrap/BootstrapNavbar';
+import { BootstrapDropdown } from '../Bootstrap/BootstrapDropdown';
 import { Navigation } from './Navigation/Navigation';
 
 export function Header() {
@@ -10,7 +11,7 @@ export function Header() {
   return (
     <BootstrapNavbar brand="Freelance Platform">
       <Navigation />
-      <div className="auth_buttons">
+      <div className="d-flex align-items-center">
         <BootstrapButton 
           variant="outline-secondary" 
           onClick={() => setIsPopupOpen(true)}
@@ -18,12 +19,13 @@ export function Header() {
         >
           Подробнее
         </BootstrapButton>
-        <BootstrapButton variant="outline-primary" className="me-2">
-          Войти
-        </BootstrapButton>
-        <BootstrapButton variant="primary">
-          Стать фрилансером
-        </BootstrapButton>
+        <BootstrapDropdown 
+          title="Аккаунт"
+          items={[
+            { label: 'Войти', href: '#' },
+            { label: 'Регистрация', href: '#' }
+          ]}
+        />
       </div>
 
       <BootstrapModal 
