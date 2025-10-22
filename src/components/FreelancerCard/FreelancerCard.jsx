@@ -1,6 +1,7 @@
 import React from 'react';
 import { BootstrapCard } from '../Bootstrap/BootstrapCard';
 import { BootstrapButton } from '../Bootstrap/BootstrapButton';
+import { BootstrapBadge } from '../Bootstrap/BootstrapBadge';
 import './FreelancerCard.css';
 
 const FreelancerCard = ({ freelancer, onEdit, onToggleSelect, isSelected }) => {
@@ -26,6 +27,10 @@ const FreelancerCard = ({ freelancer, onEdit, onToggleSelect, isSelected }) => {
       selected={isSelected}
       onClick={handleCardClick}
     >
+      <div className="d-flex justify-content-between align-items-start mb-3">
+        <BootstrapBadge variant="warning">★ {freelancer.rating}</BootstrapBadge>
+      </div>
+      
       <div className="freelancer_info">
         <p><strong>Опыт:</strong> {freelancer.experience}</p>
         <p><strong>Ставка:</strong> ${freelancer.hourlyRate}/час</p>
