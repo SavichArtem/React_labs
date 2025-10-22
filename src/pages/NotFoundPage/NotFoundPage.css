@@ -1,0 +1,62 @@
+.not_found_section {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.not_found_container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.not_found_title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+.not_found_description {
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.home_link {
+  display: inline-block;
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home_link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 48rem) {
+  .not_found_section {
+    padding: 2rem 0;
+    min-height: 60vh;
+  }
+
+  .not_found_title {
+    font-size: 1.5rem;
+  }
+
+  .not_found_description {
+    font-size: 1rem;
+  }
+}
