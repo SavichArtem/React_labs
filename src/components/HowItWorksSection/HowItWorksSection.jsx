@@ -3,9 +3,9 @@ import '../HowItWorksSection/HowItWorksSection.css';
 export function HowItWorksSection() {
   const steps = [
     "Зарегистрируйтесь и создайте профиль",
-    "Найдите подходящие проекты в каталоге",
-    "Подайте заявку и обсудите детали",
-    "Выполните работу и получите оплату"
+    "Настройте портфолио с вашими работами",
+    "Найдите подходящие проекты в каталоге заказов",
+    "Подайте заявку и начните работать с заказчиком"
   ];
 
   return (
@@ -28,9 +28,9 @@ export function HowItWorksSection() {
           
           <div className="how_it_works_example">
             <div className="report_example">
-              <h4 className="report_example_title">Пример успешного проекта</h4>
+              <h4 className="report_example_title">Пример профиля фрилансера</h4>
               <div className="report_example_image_container">
-                <img src='freelance-example.png' alt="Пример работы фрилансера" className="report_example_image"/>
+                <img src='example.png' alt="Пример работы фрилансера" className="report_example_image"/>
               </div>
             </div>
           </div>
