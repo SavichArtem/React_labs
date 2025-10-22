@@ -1,9 +1,25 @@
 import React from 'react';
 import { BootstrapAlert } from '../Bootstrap/BootstrapAlert';
 import { BootstrapButton } from '../Bootstrap/BootstrapButton';
+import { BootstrapAccordion } from '../Bootstrap/BootstrapAccordion';
 import '../ContactSection/ContactSection.css';
 
 export function ContactSection() {
+  const faqItems = [
+    {
+      title: "Как быстро отвечает поддержка?",
+      content: "Наша поддержка отвечает в течение 1-2 часов в рабочее время."
+    },
+    {
+      title: "Есть ли мобильное приложение?",
+      content: "Да, наше мобильное приложение доступно для iOS и Android."
+    },
+    {
+      title: "Какие способы оплаты поддерживаются?",
+      content: "Мы поддерживаем банковские карты, электронные кошельки и банковские переводы."
+    }
+  ];
+
   return (
     <section className="contact_section">
       <div className="container">
@@ -18,6 +34,11 @@ export function ContactSection() {
               Есть вопросы о нашей платформе для фрилансеров? 
               Мы всегда готовы помочь вам начать успешную карьеру на фрилансе.
             </p>
+            
+            <div className="mb-4">
+              <BootstrapAccordion items={faqItems} />
+            </div>
+
             <div className="contact_info">
               <div className="contact_item">
                 <h3>Email</h3>
