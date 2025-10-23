@@ -1,8 +1,8 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const DATA_DIR = './freelancers_data';
-const INDEX_FILE = path.join(DATA_DIR, 'freelancers_index.json');
+const DATA_DIR = path.join(__dirname, '../../data/freelancers');
+const INDEX_FILE = path.join(__dirname, '../../data/freelancers_index.json');
 
 async function createFreelancer(name, specialization, experience, hourlyRate, completedProjects, rating, skills) {
     try {
@@ -44,7 +44,7 @@ async function createFreelancer(name, specialization, experience, hourlyRate, co
             completedProjects: parseInt(completedProjects),
             rating: parseFloat(rating),
             skills: skillsArray,
-            reviews: 0, // По умолчанию
+            reviews: 0,
             createdAt: new Date().toISOString()
         };
 
@@ -79,7 +79,6 @@ if (require.main === module) {
     
     if (args.length < 7) {
         console.log('Использование: node create.js "Имя Фрилансера" "специализация" "опыт" "ставка" "проекты" "рейтинг" "навыки"');
-        console.log('Пример: node create.js "Иванов Иван" "development" "senior" "35" "10" "4.8" "JavaScript,React,Node.js"');
         process.exit(1);
     }
 

@@ -1,14 +1,14 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const DATA_DIR = './freelancers_data';
+const DATA_DIR = path.join(process.cwd(), 'data/freelancers');
 
 function getSpecializationText(specialization) {
     const specializations = {
-        'development': '💻 Разработка',
-        'design': '🎨 Дизайн', 
-        'marketing': '📈 Маркетинг',
-        'writing': '✏️ Копирайтинг'
+        'development': 'Разработка',
+        'design': 'Дизайн', 
+        'marketing': 'Маркетинг',
+        'writing': 'Копирайтинг'
     };
     return specializations[specialization] || specialization;
 }

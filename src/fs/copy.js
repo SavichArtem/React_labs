@@ -25,7 +25,7 @@ async function copyDirectory(source, destination) {
             }
         }
 
-        console.log(`Резервная копия фрилансеров успешно создана в: ${destination}`);
+        console.log(`Резервная копия успешно создана в: ${destination}`);
     } catch (error) {
         console.error('Ошибка при создании резервной копии:', error.message);
         process.exit(1);

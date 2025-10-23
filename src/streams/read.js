@@ -1,5 +1,3 @@
-/* node read.js ../fs/freelancers_data/freelancers_index.json (нахожусь в папке streams)*/
-
 const fs = require('fs');
 const path = require('path');
 

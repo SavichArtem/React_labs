@@ -1,8 +1,8 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const DATA_DIR = './freelancers_data';
-const INDEX_FILE = path.join(DATA_DIR, 'freelancers_index.json');
+const DATA_DIR = path.join(process.cwd(), 'data/freelancers');
+const INDEX_FILE = path.join(process.cwd(), 'data/freelancers_index.json');
 
 async function deleteFreelancer(freelancerId) {
     try {

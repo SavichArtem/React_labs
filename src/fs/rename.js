@@ -16,7 +16,7 @@ async function renameFile(oldPath, newPath) {
 
         // Переименовываем файл
         await fs.rename(oldPath, newPath);
-        console.log(`Файл фрилансера успешно переименован: ${oldPath} -> ${newPath}`);
+        console.log(`Файл успешно переименован: ${oldPath} -> ${newPath}`);
 
     } catch (error) {
         console.error('Ошибка при переименовании файла:', error.message);

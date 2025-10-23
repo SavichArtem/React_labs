@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const INDEX_FILE = path.join('./freelancers_data', 'freelancers_index.json');
+const INDEX_FILE = path.join(process.cwd(), 'data/freelancers_index.json');
 
 function getSpecializationText(specialization) {
     const specializations = {
