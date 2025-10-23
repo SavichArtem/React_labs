@@ -1,0 +1,16 @@
+{
+  "id": 1761240815619,
+  "name": "Иван Тестовый",
+  "specialization": "Разработчик",
+  "experience": "senior",
+  "hourlyRate": 25,
+  "completedProjects": 40,
+  "rating": 5,
+  "skills": [
+    "React",
+    "Node",
+    "C#"
+  ],
+  "reviews": 0,
+  "createdAt": "2025-10-23T17:33:35.619Z"
+}
