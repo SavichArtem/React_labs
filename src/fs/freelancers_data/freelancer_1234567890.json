@@ -1,0 +1,14 @@
+{
+  "id": 1761237051627,
+  "name": "Иван Иванович",
+  "specialization": "Программист",
+  "experience": "senior",
+  "hourlyRate": 25,
+  "completedProjects": 23,
+  "rating": 4.2,
+  "skills": [
+    "React"
+  ],
+  "reviews": 0,
+  "createdAt": "2025-10-23T16:30:51.628Z"
+}
