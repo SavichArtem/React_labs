@@ -6,5 +6,13 @@
     "experience": "senior",
     "hourlyRate": 25,
     "filename": "freelancer_1761240815619.json"
+  },
+  {
+    "id": 1761240815610,
+    "name": "Иван Второй",
+    "specialization": "Разработчик",
+    "experience": "senior",
+    "hourlyRate": 5,
+    "filename": "freelancer_1761240815610.json"
   }
 ]

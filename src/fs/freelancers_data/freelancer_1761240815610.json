@@ -1,0 +1,16 @@
+{
+  "id": 1761240815610,
+  "name": "Иван Второй",
+  "specialization": "Разработчик",
+  "experience": "senior",
+  "hourlyRate": 5,
+  "completedProjects": 40,
+  "rating": 5,
+  "skills": [
+    "React",
+    "Node",
+    "C#"
+  ],
+  "reviews": 0,
+  "createdAt": "2025-10-23T17:33:35.619Z"
+}
