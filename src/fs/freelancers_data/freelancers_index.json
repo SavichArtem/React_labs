@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1761237051627,
+    "name": "Иван Иванович",
+    "specialization": "Программист",
+    "experience": "senior",
+    "hourlyRate": 25,
+    "filename": "freelancer_1761237051627.json"
+  },
+  {
+    "id": 1761237168124,
+    "name": "Тестовый Фрилансер",
+    "specialization": "тест",
+    "experience": "senior",
+    "hourlyRate": 0,
+    "filename": "freelancer_1761237168124.json"
+  }
+]

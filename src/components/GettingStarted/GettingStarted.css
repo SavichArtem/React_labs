@@ -1,0 +1,132 @@
+.getting_started {
+  padding: 4rem 1rem;
+  background: #f8f9fa;
+}
+
+.getting_started_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.getting_started_header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.getting_started_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.getting_started_subtitle {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.getting_started_steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step_card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.step_card_number {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.step_card_title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.step_card_text {
+  color: #718096;
+  line-height: 1.5;
+}
+
+.getting_started_action {
+  text-align: center;
+}
+
+.cta_button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta_button:hover {
+  background: #0b5ed7;
+}
+
+.getting_started_note {
+  margin-top: 1rem;
+  color: #718096;
+}
+
+@media (max-width: 900px) {
+  .getting_started_steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .getting_started {
+    padding: 2rem 1rem;
+  }
+  
+  .getting_started_title {
+    font-size: 2rem;
+  }
+  
+  .getting_started_subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .getting_started_steps {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .step_card {
+    padding: 1.5rem;
+  }
+  
+  .cta_button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
