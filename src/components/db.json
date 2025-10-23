@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Иванов Иван Иванович",
+    "specialization": "development",
+    "experience": "senior",
+    "hourlyRate": 35,
+    "completedProjects": 47,
+    "rating": 4.8,
+    "skills": ["JavaScript", "React", "Node.js", "TypeScript"],
+    "reviews": 45
+  },
+  {
+    "id": 2,
+    "name": "Петрова Анна Сергеевна",
+    "specialization": "design",
+    "experience": "middle",
+    "hourlyRate": 25,
+    "completedProjects": 23,
+    "rating": 4.9,
+    "skills": ["UI/UX", "Figma", "Adobe Photoshop", "Illustrator"],
+    "reviews": 22
+  },
+  {
+    "id": 3,
+    "name": "Сидоров Дмитрий Петрович",
+    "specialization": "marketing",
+    "experience": "junior",
+    "hourlyRate": 15,
+    "completedProjects": 8,
+    "rating": 4.5,
+    "skills": ["SMM", "Контекстная реклама", "Аналитика"],
+    "reviews": 7
+  }
+]

@@ -1,0 +1,140 @@
+.how_it_works {
+  padding: 3rem 0;
+}
+
+.how_it_works_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.how_it_works_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .how_it_works_content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .how_it_works_text,
+  .how_it_works_example {
+    flex: 1;
+  }
+}
+
+.how_it_works_title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .how_it_works_title {
+    text-align: left;
+  }
+}
+
+.steps_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.steps_list_item {
+  margin-bottom: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border: none;
+  background: transparent;
+}
+
+.step_number {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.step_text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.report_example {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 123, 255, 0.1);
+  background: white;
+  border: 1px solid rgba(0, 123, 255, 0.15);
+}
+
+.report_example_title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.report_example_image_container {
+  min-height: 15.625rem;
+  background-color: #f8f9fa;
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.report_example_image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .how_it_works {
+    padding: 2rem 0;
+  }
+  
+  .how_it_works_title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .step {
+    padding: 0.75rem 0;
+  }
+  
+  .step_number {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+  
+  .report_example {
+    padding: 1rem;
+  }
+  
+  .report_example_image_container {
+    min-height: 12.5rem;
+  }
+}
